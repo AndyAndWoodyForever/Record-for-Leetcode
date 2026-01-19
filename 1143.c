@@ -34,8 +34,6 @@ char *build_lcs(char s[], char *a, int blen, int clen)
 }
 int longestCommonSubsequence(char* text1, char* text2) {
     int c[1001][1001];
-
-
 char str3[1001];
     int len = lcsLen(text1, text2);
     build_lcs(str3, text1, strlen(text2), len);
